@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="com.sigmaukraine.customviewsdemo.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+
+        <com.sigmaukraine.customviewsdemo.views.SquareButton
+            android:id="@+id/toggleTextButton"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:text="@string/title" />
+
+        <com.sigmaukraine.customviewsdemo.views.SquareButton
+            android:id="@+id/redColorButton"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:background="@color/red"
+            android:text="@string/red" />
+
+        <com.sigmaukraine.customviewsdemo.views.SquareButton
+            android:id="@+id/greenColorButton"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:background="@color/green"
+            android:text="@string/green" />
+
+        <com.sigmaukraine.customviewsdemo.views.SquareButton
+            android:id="@+id/blueColorButton"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:background="@color/blue"
+            android:text="@string/blue" />
+
+        <com.sigmaukraine.customviewsdemo.views.SquareButton
+            android:id="@+id/shapeTextButton"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:text="@string/shape" />
+    </LinearLayout>
+
+    <com.sigmaukraine.customviewsdemo.views.ShapeSelectorView
+        android:id="@+id/shapeSelectorView"
+        android:layout_margin="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:displayShapeName="true"
+        app:shapeColor="#987654"/>
+
+</LinearLayout>
